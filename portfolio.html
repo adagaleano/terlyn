@@ -60,10 +60,15 @@
       </nav>
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:galeanoterlyn@gmail.com" class="email" aria-label="Correo">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="tel:+50497717219" class="phone" aria-label="Teléfono">
+          <i class="bi bi-telephone"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/terlyn-galeano/" target="_blank" class="linkedin" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
       </div>
 
     </div>
@@ -89,70 +94,160 @@
 
         <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
           <li data-filter="*" class="filter-active">Todos</li>
-          <li data-filter=".filter-data">Datos</li>
+          <li data-filter=".filter-report">Informes</li>
+          <li data-filter=".filter-dashboard">Dashboards</li>
+          <li data-filter=".filter-analysis">Análisis</li>
+          <li data-filter=".filter-request">Solicitudes</li>
           <li data-filter=".filter-automation">Automatización</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter=".filter-web">Sistemas Web</li>
         </ul><!-- End Portfolio Filters -->
 
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Automatización del informe de recaudación">
+          <!-- INFORMES -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
+            <img src="assets/img/portafolio/recaudación.png" class="img-fluid" alt="Informe Trimestral de Recaudación">
             <div class="portfolio-info">
-              <h4>Informe de recaudación automatizado</h4>
-              <p>Pipeline en R, Python y LaTeX para reducir tiempos de generación de horas a minutos.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Informe de recaudación automatizado" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Informe Trimestral de Recaudación</h4>
+              <p>Pipeline en Python y LaTeX que genera automáticamente el informe trimestral del SAR, incluyendo análisis de estacionalidad del ISV.</p>
+              <a href="assets/img/portafolio/recaudación.png" title="Informe Trimestral de Recaudación" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=informe-trimestral" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Dashboards tributarios">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
+            <img src="assets/img/portafolio/Nota ejecutiva.png" class="img-fluid" alt="Nota Ejecutiva Mensual de Recaudación">
             <div class="portfolio-info">
-              <h4>Dashboards tributarios</h4>
-              <p>Visualizaciones en Shiny y Power BI para seguimiento mensual de la recaudación.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Dashboards tributarios" data-gallery="portfolio-gallery-data" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Nota Ejecutiva de Recaudación</h4>
+              <p>Nota ejecutiva mensual generada automáticamente en R/Python con plantilla LaTeX, integración a Google Sheets y procesamiento del IPC nacional.</p>
+              <a href="assets/img/portafolio/Nota ejecutiva.png" title="Nota Ejecutiva de Recaudación" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=nota-ejecutiva" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="ETL y calidad de datos en Oracle">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
+            <img src="assets/img/portafolio/ventas.png" class="img-fluid" alt="Informe de Ventas Tributarias">
             <div class="portfolio-info">
-              <h4>ETL y calidad de datos en Oracle</h4>
-              <p>Consultas avanzadas, PL-SQL, validaciones automáticas y trazabilidad de información.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="ETL y calidad de datos en Oracle" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Informe de Ventas Tributarias</h4>
+              <p>Análisis y reportería automatizada de ventas gravadas vs. ingresos por contribuyente y período, con pipeline de datos en KNIME y R.</p>
+              <a href="assets/img/portafolio/ventas.png" title="Informe de Ventas Tributarias" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=informe-ventas" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="Investigación aplicada en diferencias en diferencias">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
+            <img src="assets/img/portafolio/Resumen ejec.png" class="img-fluid" alt="Resumen Ejecutivo Automatizado">
             <div class="portfolio-info">
-              <h4>Investigación DiD sobre reclasificación</h4>
-              <p>Análisis del impacto de la reclasificación de contribuyentes sobre la recaudación tributaria.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="Investigación DiD sobre reclasificación" data-gallery="portfolio-gallery-data" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Resumen Ejecutivo Automatizado</h4>
+              <p>Documento ejecutivo generado con R Markdown y LaTeX, integrado al Shiny interno del SAR para actualización dinámica de cifras.</p>
+              <a href="assets/img/portafolio/Resumen ejec.png" title="Resumen Ejecutivo Automatizado" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=resumen-ejecutivo" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
+          <!-- DASHBOARDS -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Dashboard DataLab SAR">
+            <div class="portfolio-info">
+              <h4>Dashboard DataLab SAR</h4>
+              <p>Aplicación Shiny con visualización interactiva de ISR personas jurídicas, personas naturales y ventas. Publicada en shinyapps.io.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Dashboard DataLab SAR" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=dashboard-datalab" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Dashboard SAR-Aduanas">
+            <div class="portfolio-info">
+              <h4>Dashboard SAR-Aduanas</h4>
+              <p>Dashboard Shiny integrado con datos tributarios internos y aduaneros, con detalle por impuesto, domicilio fiscal y reclasificación de contribuyentes.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Dashboard SAR-Aduanas" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=dashboard-aduanas" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Dashboard Shiny con Módulos">
+            <div class="portfolio-info">
+              <h4>Dashboard Shiny con Módulos</h4>
+              <p>Aplicación Shiny modularizada con autenticación, análisis por departamento e indicadores tributarios interactivos.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Dashboard Shiny con Módulos" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=dashboard-modulos" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <!-- ANÁLISIS -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="Estimación de Evasión Fiscal ISV">
+            <div class="portfolio-info">
+              <h4>Estimación de Evasión Fiscal ISV</h4>
+              <p>Aplicación de la metodología RA-GAP del BID para estimar el gap tributario del ISV en Honduras (2018–2022), con matrices COU trimestrales y datos aduaneros.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="Estimación de Evasión Fiscal ISV" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=evasion-fiscal" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+            <img src="assets/img/portafolio/proyecciones.png" class="img-fluid" alt="Proyecciones de Ingresos Tributarios">
+            <div class="portfolio-info">
+              <h4>Proyecciones de Ingresos Tributarios</h4>
+              <p>Modelos de pronóstico y distribución de ingresos tributarios por categoría impositiva 2021–2025, con seguimiento y actualización mensual.</p>
+              <a href="assets/img/portafolio/proyecciones.png" title="Proyecciones de Ingresos Tributarios" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=proyecciones" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Impacto de la Reclasificación de Contribuyentes">
+            <div class="portfolio-info">
+              <h4>Impacto de la Reclasificación de Contribuyentes</h4>
+              <p>Análisis causal del efecto de la reclasificación de contribuyentes sobre la recaudación tributaria mediante diferencias en diferencias (DiD).</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Impacto de la Reclasificación de Contribuyentes" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=reclasificacion" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <!-- SOLICITUDES -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-request">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="Workflows KNIME para Solicitudes">
+            <div class="portfolio-info">
+              <h4>Workflows KNIME para Solicitudes</h4>
+              <p>Automatización en KNIME de solicitudes de datos a IHSS, Aduanas y otras instituciones; incluye anonimización, extracción y entrega de microdatos.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="Workflows KNIME para Solicitudes" data-gallery="portfolio-gallery-request" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=workflows-knime" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+
+          <!-- SISTEMAS WEB -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Avvisi Audio">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="Avvisi Audio – Sistema Web">
             <div class="portfolio-info">
-              <h4>Avvisi Audio</h4>
-              <p>Sistema integral con cotizaciones, inventario y dashboard analítico para seguimiento operativo.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Avvisi Audio" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Avvisi Audio – Sistema Web</h4>
+              <p>Sistema web integral en Flask para gestión de cotizaciones, inventario, clientes y proveedores, con generación de PDFs en LaTeX y despliegue en Render.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Avvisi Audio – Sistema Web" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=avvisi-audio" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="Desarrollo web freelance">
+          <!-- AUTOMATIZACIÓN -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Generación Automática de PowerPoint">
             <div class="portfolio-info">
-              <h4>Desarrollo web freelance</h4>
-              <p>Sitios en WordPress y páginas personalizadas con HTML, CSS, JavaScript y PHP.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Desarrollo web freelance" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Generación Automática de PowerPoint</h4>
+              <p>Script en Python que produce presentaciones institucionales completas a partir de datos procesados, sin intervención manual en el diseño.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Generación Automática de PowerPoint" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=powerpoint-auto" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="ETL Oracle / PL-SQL">
+            <div class="portfolio-info">
+              <h4>ETL Oracle / PL-SQL</h4>
+              <p>Procesos de extracción, transformación y carga de datos tributarios en Oracle con validaciones automáticas, trazabilidad y control de calidad.</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="ETL Oracle / PL-SQL" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=etl-oracle" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
@@ -170,13 +265,18 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Kelly</strong> <span>All Rights Reserved<br></span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Terlyn</strong> <span>All Rights Reserved<br></span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:galeanoterlyn@gmail.com" class="email" aria-label="Correo">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="tel:+50497717219" class="phone" aria-label="Teléfono">
+          <i class="bi bi-telephone"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/terlyn-galeano/" target="_blank" class="linkedin" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

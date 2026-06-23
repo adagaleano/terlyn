@@ -1421,3 +1421,23 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.hero-text-blur {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.18); /* oscurece un poco */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text-blur h2,
+.hero-text-blur p {
+  margin: 0;
+  color: #fff;
+}
+
+.hero-text-blur h2 {
+  margin-bottom: 8px;
+}
