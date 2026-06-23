@@ -370,10 +370,14 @@
         toolsEl.appendChild(chip);
       });
 
-      // Image
+      // Image (se oculta si el proyecto no tiene captura pública)
       const img = document.getElementById('proj-image');
-      img.src = p.image;
-      img.alt = p.title;
+      if (p.image) {
+        img.src = p.image;
+        img.alt = p.title;
+      } else {
+        img.style.display = 'none';
+      }
 
       // Process steps
       const stepsEl = document.getElementById('process-steps');

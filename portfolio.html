@@ -90,6 +90,14 @@
 
     <div class="container">
 
+      <div class="portfolio-notice" data-aos="fade-up" data-aos-delay="120">
+        <i class="bi bi-shield-lock"></i>
+        <div>
+          <h4>Confidencialidad de los proyectos</h4>
+          <p>Por ética profesional y la naturaleza sensible de la información tributaria y empresarial, varios de estos proyectos no incluyen enlace de acceso; únicamente se muestran capturas ilustrativas.</p>
+        </div>
+      </div><!-- End Confidentiality Notice -->
+
       <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
         <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -104,149 +112,176 @@
 
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <!-- INFORMES -->
+          <!-- ===== INFORMES ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
-            <img src="assets/img/portafolio/recaudación.png" class="img-fluid" alt="Informe Trimestral de Recaudación">
+            <img src="assets/img/portafolio/Informes%20y%20notas/recaudación.png" class="img-fluid" alt="Informe Mensual de Recaudación">
             <div class="portfolio-info">
-              <h4>Informe Trimestral de Recaudación</h4>
-              <p>Pipeline en Python y LaTeX que genera automáticamente el informe trimestral del SAR, incluyendo análisis de estacionalidad del ISV.</p>
-              <a href="assets/img/portafolio/recaudación.png" title="Informe Trimestral de Recaudación" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html?id=informe-trimestral" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Informe Mensual de Recaudación</h4>
+              <p>Pipeline en Python (orientado a objetos: loader, processor y plotter) que lee desde Google Sheets los datos de SAR y Aduanas preparados en KNIME, calcula variaciones interanuales (mensuales y acumuladas) y los desglosa por impuesto, tipo y tamaño de contribuyente, departamento, municipio y actividad económica. Produce gráficos en matplotlib y mapas SVG, y arma el informe final en LaTeX con plantillas Jinja2 compiladas con latexmk.</p>
+              <a href="assets/img/portafolio/Informes%20y%20notas/recaudación.png" title="Informe Mensual de Recaudación" data-gallery="portfolio-gallery-recaudacion-informe" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=informe-recaudacion" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
-            <img src="assets/img/portafolio/Nota ejecutiva.png" class="img-fluid" alt="Nota Ejecutiva Mensual de Recaudación">
+            <img src="assets/img/portafolio/Informes%20y%20notas/Nota%20ejecutiva.png" class="img-fluid" alt="Nota Ejecutiva de Recaudación">
             <div class="portfolio-info">
               <h4>Nota Ejecutiva de Recaudación</h4>
-              <p>Nota ejecutiva mensual generada automáticamente en R/Python con plantilla LaTeX, integración a Google Sheets y procesamiento del IPC nacional.</p>
-              <a href="assets/img/portafolio/Nota ejecutiva.png" title="Nota Ejecutiva de Recaudación" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Generador en Python que lee la recaudación desde Google Sheets y plantillas .xlsb, procesa el IPC del BCH y la recaudación anual y mensual, y produce la nota ejecutiva en LaTeX (con una versión paralela en R/Shiny).</p>
+              <a href="assets/img/portafolio/Informes%20y%20notas/Nota%20ejecutiva.png" title="Nota Ejecutiva de Recaudación" data-gallery="portfolio-gallery-nota" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=nota-ejecutiva" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
-            <img src="assets/img/portafolio/ventas.png" class="img-fluid" alt="Informe de Ventas Tributarias">
+            <img src="assets/img/portafolio/Informes%20y%20notas/ventas.png" class="img-fluid" alt="Informe de Ventas Tributarias">
             <div class="portfolio-info">
               <h4>Informe de Ventas Tributarias</h4>
-              <p>Análisis y reportería automatizada de ventas gravadas vs. ingresos por contribuyente y período, con pipeline de datos en KNIME y R.</p>
-              <a href="assets/img/portafolio/ventas.png" title="Informe de Ventas Tributarias" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Reportería automatizada de ventas gravadas vs. ingresos: extracción con KNIME, procesamiento en Python con ajuste por IPC y generación del informe final en LaTeX a partir de una plantilla.</p>
+              <a href="assets/img/portafolio/Informes%20y%20notas/ventas.png" title="Informe de Ventas Tributarias" data-gallery="portfolio-gallery-ventas" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=informe-ventas" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-report">
-            <img src="assets/img/portafolio/Resumen ejec.png" class="img-fluid" alt="Resumen Ejecutivo Automatizado">
+            <img src="assets/img/portafolio/Informes%20y%20notas/directos_e_indirectos.png" class="img-fluid" alt="Resumen Ejecutivo: Impuestos Directos e Indirectos">
             <div class="portfolio-info">
-              <h4>Resumen Ejecutivo Automatizado</h4>
-              <p>Documento ejecutivo generado con R Markdown y LaTeX, integrado al Shiny interno del SAR para actualización dinámica de cifras.</p>
-              <a href="assets/img/portafolio/Resumen ejec.png" title="Resumen Ejecutivo Automatizado" data-gallery="portfolio-gallery-report" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <h4>Resumen Ejecutivo: Directos e Indirectos</h4>
+              <p>Resumen ejecutivo mensual sobre la proporción entre impuestos directos e indirectos de los tributos internos, elaborado a partir de la base de recaudación y publicado con la plantilla institucional del SAR.</p>
+              <a href="assets/img/portafolio/Informes%20y%20notas/directos_e_indirectos.png" title="Resumen Ejecutivo: Directos e Indirectos" data-gallery="portfolio-gallery-resumen" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=resumen-ejecutivo" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
+            <a href="assets/img/portafolio/Informes%20y%20notas/Resumen%20ejec.png" data-gallery="portfolio-gallery-resumen" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
           </div><!-- End Portfolio Item -->
 
-          <!-- DASHBOARDS -->
+          <!-- ===== DASHBOARDS ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Dashboard DataLab SAR">
+            <img src="assets/img/portafolio/Dashboard/datalab/inicio.png" class="img-fluid" alt="Dashboard DataLab SAR">
             <div class="portfolio-info">
               <h4>Dashboard DataLab SAR</h4>
-              <p>Aplicación Shiny con visualización interactiva de ISR personas jurídicas, personas naturales y ventas. Publicada en shinyapps.io.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Dashboard DataLab SAR" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Aplicación R Shiny alimentada por un pipeline que conecta a Oracle, ejecuta consultas SQL y aplica control de calidad y transformaciones en R. Visualiza obligados tributarios, ISR de personas jurídicas y naturales y ventas, con figuras en Python y un asistente integrado (DataLab Bot).</p>
+              <a href="assets/img/portafolio/Dashboard/datalab/inicio.png" title="Dashboard DataLab SAR" data-gallery="portfolio-gallery-datalab" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=dashboard-datalab" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
+            <a href="assets/img/portafolio/Dashboard/datalab/2.png" data-gallery="portfolio-gallery-datalab" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Dashboard SAR-Aduanas">
+            <img src="assets/img/portafolio/Dashboard/SAR_ADUANAS/1.png" class="img-fluid" alt="Dashboard SAR-Aduanas">
             <div class="portfolio-info">
               <h4>Dashboard SAR-Aduanas</h4>
-              <p>Dashboard Shiny integrado con datos tributarios internos y aduaneros, con detalle por impuesto, domicilio fiscal y reclasificación de contribuyentes.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Dashboard SAR-Aduanas" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Dashboard Shiny modular (módulos de KPIs, filtros, gráficos, tablas y glosario) que consolida e integra datos del SAR, Aduanas y SEFIN, con detalle por impuesto, domicilio fiscal y variaciones interanuales.</p>
+              <a href="assets/img/portafolio/Dashboard/SAR_ADUANAS/1.png" title="Dashboard SAR-Aduanas" data-gallery="portfolio-gallery-aduanas" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=dashboard-aduanas" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-dashboard">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="Dashboard Shiny con Módulos">
+            <img src="assets/img/portafolio/Dashboard/recaudación/1.png" class="img-fluid" alt="Dashboard de Recaudación">
             <div class="portfolio-info">
-              <h4>Dashboard Shiny con Módulos</h4>
-              <p>Aplicación Shiny modularizada con autenticación, análisis por departamento e indicadores tributarios interactivos.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Dashboard Shiny con Módulos" data-gallery="portfolio-gallery-dashboard" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="portfolio-details.html?id=dashboard-modulos" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <h4>Dashboard de Recaudación</h4>
+              <p>Tablero Shiny modular con autenticación de usuarios que procesa y segmenta la recaudación, mostrando el cumplimiento frente a la meta anual, la distribución por impuesto y un mapa interactivo por departamento.</p>
+              <a href="assets/img/portafolio/Dashboard/recaudación/1.png" title="Dashboard de Recaudación" data-gallery="portfolio-gallery-recaudacion-dash" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=dashboard-recaudacion" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
+            <a href="assets/img/portafolio/Dashboard/recaudación/3.png" data-gallery="portfolio-gallery-recaudacion-dash" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
           </div><!-- End Portfolio Item -->
 
-          <!-- ANÁLISIS -->
+          <!-- ===== ANÁLISIS (sin imagen aún) ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="Estimación de Evasión Fiscal ISV">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">Estimación de Evasión Fiscal ISV</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>Estimación de Evasión Fiscal ISV</h4>
-              <p>Aplicación de la metodología RA-GAP del BID para estimar el gap tributario del ISV en Honduras (2018–2022), con matrices COU trimestrales y datos aduaneros.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="Estimación de Evasión Fiscal ISV" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Estimación del gap de cumplimiento del ISV con la metodología RA-GAP del BID: preparación de microdatos de declaraciones y pagos del ISV en Stata y matrices oferta-utilización para comparar la recaudación potencial con la observada (2018–2022).</p>
               <a href="portfolio-details.html?id=evasion-fiscal" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
-            <img src="assets/img/portafolio/proyecciones.png" class="img-fluid" alt="Proyecciones de Ingresos Tributarios">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">Proyecciones de Ingresos Tributarios</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>Proyecciones de Ingresos Tributarios</h4>
-              <p>Modelos de pronóstico y distribución de ingresos tributarios por categoría impositiva 2021–2025, con seguimiento y actualización mensual.</p>
-              <a href="assets/img/portafolio/proyecciones.png" title="Proyecciones de Ingresos Tributarios" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Modelos de pronóstico de ingresos tributarios por categoría impositiva en R/R Markdown, con distribución mensual, reporte reproducible en HTML y actualización periódica del seguimiento.</p>
               <a href="portfolio-details.html?id=proyecciones" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="Impacto de la Reclasificación de Contribuyentes">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">Impacto de la Reclasificación de Contribuyentes</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>Impacto de la Reclasificación de Contribuyentes</h4>
-              <p>Análisis causal del efecto de la reclasificación de contribuyentes sobre la recaudación tributaria mediante diferencias en diferencias (DiD).</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Impacto de la Reclasificación de Contribuyentes" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Estudio de inferencia causal en R sobre el efecto de la reclasificación de contribuyentes en la recaudación, mediante diferencias en diferencias (DiD), matrices de transición y series de tiempo, documentado en un paper en LaTeX.</p>
               <a href="portfolio-details.html?id=reclasificacion" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-          <!-- SOLICITUDES -->
+          <!-- ===== SOLICITUDES (sin imagen aún) ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-request">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="Workflows KNIME para Solicitudes">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">Workflows KNIME para Solicitudes</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>Workflows KNIME para Solicitudes</h4>
-              <p>Automatización en KNIME de solicitudes de datos a IHSS, Aduanas y otras instituciones; incluye anonimización, extracción y entrega de microdatos.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="Workflows KNIME para Solicitudes" data-gallery="portfolio-gallery-request" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Workflows en KNIME para atender solicitudes de datos (IHSS, Aduanas y otras instituciones), con anonimización de microdatos en Python y R y entrega controlada de la información.</p>
               <a href="portfolio-details.html?id=workflows-knime" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
-
-          <!-- SISTEMAS WEB -->
+          <!-- ===== SISTEMAS WEB ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="Avvisi Audio – Sistema Web">
+            <img src="assets/img/portafolio/Sistemas/Avissi/1.png" class="img-fluid" alt="Avvisi Audio – Sistema Web">
             <div class="portfolio-info">
               <h4>Avvisi Audio – Sistema Web</h4>
-              <p>Sistema web integral en Flask para gestión de cotizaciones, inventario, clientes y proveedores, con generación de PDFs en LaTeX y despliegue en Render.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Avvisi Audio – Sistema Web" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Sistema web en Flask con backend en Supabase (PostgreSQL) para gestionar clientes, catálogo (equipos, consumibles, servicios y paquetes), eventos, cotizaciones y reservas con control de disponibilidad; genera las cotizaciones en PDF mediante plantillas LaTeX.</p>
+              <a href="assets/img/portafolio/Sistemas/Avissi/1.png" title="Avvisi Audio – Sistema Web" data-gallery="portfolio-gallery-avissi" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
               <a href="portfolio-details.html?id=avvisi-audio" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
+            <a href="assets/img/portafolio/Sistemas/Avissi/2.png" data-gallery="portfolio-gallery-avissi" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
+            <a href="assets/img/portafolio/Sistemas/Avissi/3.png" data-gallery="portfolio-gallery-avissi" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
           </div><!-- End Portfolio Item -->
 
-          <!-- AUTOMATIZACIÓN -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <img src="assets/img/portafolio/Sistemas/creative%20dreams/2.png" class="img-fluid" alt="Creative Dreams – Sistema Web">
+            <div class="portfolio-info">
+              <h4>Creative Dreams – Sistema Web</h4>
+              <p>Sistema web en Flask con Supabase para planificación de eventos: panel interno (eventos, clientes, proveedores, catálogo, cotizaciones y pagos), portal del cliente con documentos e itinerario, y página pública por evento con galería, cuenta regresiva, mesa de regalos y RSVP.</p>
+              <a href="assets/img/portafolio/Sistemas/creative%20dreams/2.png" title="Creative Dreams – Sistema Web" data-gallery="portfolio-gallery-creative" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html?id=creative-dreams" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+            <a href="assets/img/portafolio/Sistemas/creative%20dreams/1.png" data-gallery="portfolio-gallery-creative" class="glightbox d-none" aria-hidden="true" tabindex="-1"></a>
+          </div><!-- End Portfolio Item -->
+
+          <!-- ===== AUTOMATIZACIÓN (sin imagen aún) ===== -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="Generación Automática de PowerPoint">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">Generación Automática de PowerPoint</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>Generación Automática de PowerPoint</h4>
-              <p>Script en Python que produce presentaciones institucionales completas a partir de datos procesados, sin intervención manual en el diseño.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Generación Automática de PowerPoint" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Script en Python (python-pptx, pandas y matplotlib) que arma automáticamente las presentaciones —portada, tablas y gráficos— a partir de los datos, sin diseñar las diapositivas a mano.</p>
               <a href="portfolio-details.html?id=powerpoint-auto" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
-            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="ETL Oracle / PL-SQL">
+            <div class="portfolio-placeholder">
+              <span class="placeholder-title">ETL Oracle / PL-SQL</span>
+              <span class="placeholder-tag">Sin vista previa pública</span>
+            </div>
             <div class="portfolio-info">
               <h4>ETL Oracle / PL-SQL</h4>
-              <p>Procesos de extracción, transformación y carga de datos tributarios en Oracle con validaciones automáticas, trazabilidad y control de calidad.</p>
-              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="ETL Oracle / PL-SQL" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <p>Extracción y carga de datos tributarios desde Oracle: conexión a la base, consultas SQL y control de calidad y transformación de los datos que alimentan los dashboards y reportes.</p>
               <a href="portfolio-details.html?id=etl-oracle" title="Más detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div><!-- End Portfolio Item -->
