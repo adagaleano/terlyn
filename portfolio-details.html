@@ -277,6 +277,15 @@
                 <span class="ficha-label">Institución</span>
                 <span class="ficha-value" id="proj-institution"></span>
               </div>
+
+              <div class="ficha-item" id="proj-link-item" style="display:none;">
+                <span class="ficha-label">Enlace</span>
+                <span class="ficha-value">
+                  <a id="proj-link" href="#" target="_blank" rel="noopener">
+                    <i class="bi bi-box-arrow-up-right me-1"></i>Ver sitio
+                  </a>
+                </span>
+              </div>
             </div>
 
             <p class="section-label"><i class="bi bi-file-text me-1"></i>Descripción</p>
@@ -360,6 +369,13 @@
       document.getElementById('proj-period').textContent = p.period;
       document.getElementById('proj-institution').textContent = p.institution;
       document.getElementById('proj-description').textContent = p.description;
+
+      // Enlace (solo si el proyecto lo tiene)
+      if (p.link) {
+        const linkEl = document.getElementById('proj-link');
+        linkEl.href = p.link;
+        document.getElementById('proj-link-item').style.display = '';
+      }
 
       // Tools chips
       const toolsEl = document.getElementById('proj-tools');

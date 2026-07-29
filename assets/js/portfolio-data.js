@@ -266,6 +266,7 @@ const portfolioData = {
     tools: ["Flask", "Python", "Supabase", "PostgreSQL", "LaTeX", "Docker", "Render", "Jinja2"],
     period: "2024",
     institution: "Avvisi Audio (freelance)",
+    link: "https://avvisi-audio.onrender.com/",
     image: "assets/img/portafolio/Sistemas/Avissi/1.png",
     description: "Sistema web integral en Flask para la gestión operativa de Avvisi Audio: cotizaciones con PDF automático en LaTeX, catálogo de productos, clientes, proveedores, eventos y dashboard. Backend en Supabase (PostgreSQL) y despliegue en Render con Docker.",
     steps: [
@@ -305,6 +306,56 @@ const portfolioData = {
         desc: "Página por evento con galería, cuenta regresiva, mesa de regalos y confirmación de asistencia (RSVP) para los invitados." },
       { title: "Despliegue", tools: ["gunicorn"],
         desc: "Servidor WSGI con gunicorn para el despliegue en producción." }
+    ]
+  },
+
+  "invitacion-boda": {
+    title: "Invitación de Boda – Sitio Web",
+    category: "Sistema web",
+    tools: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    period: "2026",
+    institution: "Proyecto personal (freelance)",
+    link: "https://adagaleano.github.io/Boda/",
+    image: "",
+    description: "Sitio web de una sola página (one-page) para una invitación de boda digital: portada interactiva con save the date, reproductor de la canción de la pareja, cuenta regresiva al gran día, calendario e itinerario del evento, ubicación de la ceremonia con mapa y confirmación de asistencia (RSVP) por formulario y WhatsApp. Publicado como sitio estático en GitHub Pages.",
+    steps: [
+      { title: "Portada y save the date", tools: ["HTML", "CSS"],
+        desc: "Portada animada con los nombres de la pareja, la fecha del evento y una apertura tipo «toca para abrir», junto con versículos y los nombres de los padres." },
+      { title: "Reproductor de la canción", tools: ["JavaScript"],
+        desc: "Sección con la canción de la pareja y control de reproducción para ambientar la invitación." },
+      { title: "Cuenta regresiva", tools: ["JavaScript"],
+        desc: "Contador dinámico de días, horas, minutos y segundos hasta la fecha de la boda." },
+      { title: "Calendario e itinerario", tools: ["HTML", "CSS"],
+        desc: "Calendario del mes con la fecha destacada y línea de tiempo del evento: ceremonia, recepción, cena, baile y fin de la celebración." },
+      { title: "Ubicación con mapa", tools: ["HTML", "mapa"],
+        desc: "Sección de la parroquia con la dirección, la hora y un enlace directo a la ubicación en el mapa." },
+      { title: "Confirmación de asistencia (RSVP)", tools: ["Formulario", "WhatsApp"],
+        desc: "Confirmación de asistencia mediante formulario y enlaces directos de WhatsApp a la novia y al novio." },
+      { title: "Despliegue", tools: ["GitHub Pages"],
+        desc: "Sitio estático publicado en GitHub Pages con acceso público mediante enlace." }
+    ]
+  },
+
+  "datalab-asesores": {
+    title: "DataLab – Sitio de Postulantes",
+    category: "Sistema web",
+    tools: ["HTML", "CSS", "JavaScript", "Shiny", "GitHub Pages"],
+    period: "2025",
+    institution: "DataLab (proyecto personal)",
+    link: "https://adagaleano.github.io/asesores/",
+    image: "",
+    description: "Sitio web de presentación (landing) para DataLab, un equipo de tres postulantes especializados en análisis de datos, inteligencia de negocios y estrategia analítica. Presenta la propuesta de valor, las tarjetas de perfil de cada candidato con su formación y experiencia, enlaces a los perfiles individuales y acceso a un dashboard interactivo de recursos. Publicado como sitio estático en GitHub Pages.",
+    steps: [
+      { title: "Diseño de la landing", tools: ["HTML", "CSS"],
+        desc: "Sección principal con la marca DataLab, el eslogan «Transformamos datos en decisiones estratégicas» y los llamados a la acción hacia los perfiles y los recursos." },
+      { title: "Tarjetas de perfiles", tools: ["HTML", "CSS", "JavaScript"],
+        desc: "Tarjetas de los tres postulantes (Alejandro Fuentes, Ruth Moreno y David Sauceda) con su rol, formación y experiencia, y un botón «Ver perfil»." },
+      { title: "Perfiles individuales", tools: ["HTML", "CSS"],
+        desc: "Página por candidato con el detalle de su trayectoria académica y profesional en análisis económico e inteligencia de negocios." },
+      { title: "Dashboard y recursos", tools: ["Shiny", "R"],
+        desc: "Acceso a un dashboard interactivo de recursos desarrollado con Shiny para complementar los perfiles." },
+      { title: "Despliegue", tools: ["GitHub Pages"],
+        desc: "Sitio estático publicado en GitHub Pages con acceso público mediante enlace." }
     ]
   },
 
